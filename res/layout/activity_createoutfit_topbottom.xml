@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical" >
+	
+    <LinearLayout 
+		android:background="#ffffffff"	
+		android:baselineAligned="false"
+		android:layout_height="fill_parent"
+		android:layout_width="fill_parent"	
+		android:id="@+id/createoutfit_topbottom_rootLayout"
+		android:orientation="vertical" >
+		
+		<HorizontalScrollView 
+			    android:id="@+id/creatoutfit_top_listview"
+			    android:layout_width="match_parent"
+			    android:layout_height="0px"
+		    	android:layout_weight="0.4"
+			    android:background="#fff"/> 
+	
+		<HorizontalScrollView 
+		        android:id="@+id/creatoutfit_bottom_listview"
+		        android:layout_width="match_parent"
+		        android:layout_height="0px"
+		    	android:layout_weight="0.4"
+		        android:background="#fff" />
+		
+		
+		<LinearLayout
+		    android:id="@+id/creatoutfit_below_barlayout"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.2">
+		     
+		    <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#FFFFFFFF" >
+	
+			    <com.agilepoet.introduceyourself.util.ImageViewButton
+			        android:id="@+id/btn_createoutfit_top_pick"
+			        android:layout_width="60dp"
+			        android:layout_height="50dp"
+			        android:layout_alignParentBottom="true"
+			        android:layout_centerHorizontal="true"
+			        android:background="@drawable/btn_createoutfit_pick" />
+	
+			    <com.agilepoet.introduceyourself.util.ImageViewButton
+			        android:id="@+id/btn_createoutfit_top_back"
+			        android:layout_width="60dp"
+			        android:layout_height="20dp"
+			        android:layout_alignBaseline="@+id/btn_createoutfit_top_pick"
+			        android:layout_alignBottom="@+id/btn_createoutfit_top_pick"
+			        android:layout_alignParentLeft="true"
+			        android:layout_marginLeft="17dp"
+			        android:background="@drawable/btn_createoutfit_back" />
+	
+			    <com.agilepoet.introduceyourself.util.ImageViewButton
+			        android:id="@+id/btn_createoutfit_top_done"
+			        android:layout_width="60dp"
+			        android:layout_height="20dp"
+			        android:layout_alignBaseline="@+id/btn_createoutfit_top_pick"
+			        android:layout_alignBottom="@+id/btn_createoutfit_top_pick"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="23dp"
+			        android:background="@drawable/btn_createoutfit_done" />
+				    
+		    </RelativeLayout>    
+	    </LinearLayout> 
+    </LinearLayout> 
+</LinearLayout>

@@ -1,0 +1,350 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"	
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"	
+	android:id="@+id/finallook_rootLayout" >
+    
+    
+    <!-- ********************** Delete outfit screen ********************* -->
+
+	<LinearLayout
+	    android:id="@+id/fl_deletescreen_Layout"
+	    android:layout_width="360dp"
+	    android:layout_height="136dp"
+	    android:layout_gravity="center"
+	    android:background="@drawable/img_fl_alert_deleteoutfit_bg"
+	    android:baselineAligned="false"
+	    android:orientation="vertical">
+	    
+	    <!-- Delete outfit empty screen -->
+	    <LinearLayout
+		    android:id="@+id/fl_deletescreen_emptyLayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.6"
+		    android:baselineAligned="false">    
+	
+		</LinearLayout>
+		
+	    <!-- Fl delete screen - buttons layout -->
+	    <RelativeLayout
+		    android:id="@+id/fl_deletescreen_buttonsLayout"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.4"
+		    android:baselineAligned="false"
+		    android:gravity="center">
+	        
+	        <!-- Yes Button -->
+            <com.agilepoet.introduceyourself.util.ImageViewButton 
+                android:id="@+id/btn_fl_delete_yes"                
+		        android:layout_width="80dp"
+		        android:layout_height="40dp"
+		        android:layout_marginLeft="10dp"
+		        android:src="@drawable/btn_fl_delete_yes_img"/>
+             
+             <!-- No Button -->             
+             <com.agilepoet.introduceyourself.util.ImageViewButton 
+                android:id="@+id/btn_fl_delete_no"
+		        android:layout_width="80dp"
+		        android:layout_height="40dp"
+		        android:layout_toRightOf="@+id/btn_fl_delete_yes"
+		        android:layout_marginLeft="30dp"
+		        android:src="@drawable/btn_fl_delete_no_img"/>
+	
+		 </RelativeLayout>
+	
+	</LinearLayout>
+	
+	<!-- ********************** Save and Date screen ********************* -->
+
+	<LinearLayout
+	    android:id="@+id/fl_sd_savedatescreen_Layout"
+	    android:layout_width="440dp"
+	    android:layout_height="match_parent"
+	    android:layout_gravity="center"
+	    android:background="@drawable/img_fl_savedate_bg"
+	    android:baselineAligned="false"
+	    android:orientation="horizontal" >
+	
+	    <!-- Escape layout -->
+	    <LinearLayout
+	        android:id="@+id/fl_sd_escape_Layout"
+	        android:layout_width="0px"
+	        android:layout_height="match_parent"
+	        android:layout_weight="0.48"
+	        android:baselineAligned="false"
+	        android:orientation="vertical" >
+             
+	        <!-- Escape empty layout -->
+	        <LinearLayout
+		        android:id="@+id/fl_sd_escape_emptyLayout"
+		        android:layout_width="match_parent"
+		        android:layout_height="0px"
+		        android:layout_weight="0.8"
+		        android:baselineAligned="false"
+		        android:orientation="vertical" >     
+	        
+	    
+			</LinearLayout>	 
+			
+	        <!-- Escape buttn layout -->
+	        <LinearLayout
+	            android:id="@+id/fl_sd_escapebtn_Layout"
+	            android:layout_width="match_parent"
+	            android:layout_height="0px"
+	            android:layout_weight="0.23"
+	            android:baselineAligned="false"
+	            android:orientation="vertical"
+	            android:gravity="center" >
+	            
+	            <com.agilepoet.introduceyourself.util.ImageViewButton
+	                android:id="@+id/btn_fl_escape"
+	                android:layout_width="match_parent"
+	                android:layout_height="48dp"
+	                android:src="@drawable/btn_fl_save_escapel_img" />
+	    
+			</LinearLayout>	
+	    
+		</LinearLayout>
+		
+	    <!-- Non Escape layout -->
+	    <LinearLayout
+		    android:id="@+id/fl_sd_non_escape_Layout"
+		    android:layout_width="0px"
+		    android:layout_weight="0.6"
+		    android:layout_height="match_parent"	    
+		    android:baselineAligned="false"
+		    android:orientation="vertical" >
+	        
+	        <!-- Non Escape empty layout -->
+	        <LinearLayout
+	            android:id="@+id/fl_sd_non_escape_emptyLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="0px"
+	            android:layout_weight="0.37"
+	            android:baselineAligned="false"
+	            android:orientation="vertical" >
+	    
+			</LinearLayout>	    
+			
+	        <!-- Non Escape date layout -->
+	        <LinearLayout
+	            android:id="@+id/fl_sd_non_escape_dateLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="0px"
+	            android:layout_weight="0.17"
+	            android:baselineAligned="false"
+	            android:orientation="vertical"
+	            android:gravity="center" >
+
+	            <Button
+	                android:id="@+id/btn_fl_date"
+	                android:layout_width="230dp"
+	                android:layout_height="40dp"
+	                android:background="#FFFF"
+	                android:text="00 / 00 / 00"
+	            	android:textSize="25sp"
+	            	android:textStyle="bold"/>
+	        
+	        </LinearLayout>	
+			
+	        <!-- Non Escape Content layout -->
+	        <LinearLayout
+	            android:id="@+id/fl_sd_non_escape_contentLayout"
+	            android:layout_width="match_parent"
+	            android:layout_height="0px"
+	            android:layout_weight="0.52"
+	            android:baselineAligned="false"
+	            android:orientation="horizontal" >
+	            
+	            <!-- Non Escape Content empty layout -->
+	            <LinearLayout
+		            android:id="@+id/fl_sd_content_emptyLayout"
+		            android:layout_width="0px"
+		            android:layout_height="match_parent"
+		            android:layout_weight="0.5"
+		            android:baselineAligned="false"
+		            android:orientation="horizontal" >
+	    
+				</LinearLayout>
+				
+	            <!-- Non Escape Content buttons layout -->
+
+	            <LinearLayout
+	                android:id="@+id/fl_sd_content_buttonsLayout"
+	                android:layout_width="0px"
+	                android:layout_height="match_parent"
+	                android:layout_weight="0.5"
+	                android:baselineAligned="false"
+	                android:orientation="vertical"
+	                android:gravity="center" >
+
+	                <com.agilepoet.introduceyourself.util.ImageViewButton
+	                    android:id="@+id/btn_fl_girls_am"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="40dp"
+	                    android:src="@drawable/btn_fl_save_girlsam_img" />
+
+	                <com.agilepoet.introduceyourself.util.ImageViewButton
+	                    android:id="@+id/btn_fl_girls_pm"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="40dp"
+	                    android:src="@drawable/btn_fl_save_girlspm_img" />
+
+	                <com.agilepoet.introduceyourself.util.ImageViewButton
+	                    android:id="@+id/btn_fl_guys_all"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="40dp"
+	                    android:src="@drawable/btn_fl_save_guysall_img" />
+	            </LinearLayout>
+	    
+			</LinearLayout>
+	    
+		</LinearLayout>
+	    
+	</LinearLayout>
+    
+    <!-- ********************** Main screen ********************* -->
+	<LinearLayout
+	    android:id="@+id/fl_mainscreen_Layout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@drawable/img_finallook_bg"
+	    android:baselineAligned="false"
+	    android:orientation="horizontal" >
+		
+	    <!--     
+	    <LinearLayout
+		    android:id="@+id/fl_mainscreen_emptyLayout"
+		    android:layout_width="0px"
+		    android:layout_weight="0.25"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal" >        
+		
+		</LinearLayout>  
+		-->	  
+		
+	    <!-- Real Content layout -->
+	    <LinearLayout
+		    android:id="@+id/fl_mainscreen_contentLayout"
+		    android:layout_width="fill_parent"
+		    android:weightSum="1.0"
+		    android:layout_height="fill_parent"
+		    android:orientation="horizontal" >
+		    
+	        <!-- Images layout -->
+	        <FrameLayout
+	            android:id="@+id/fl_mainscreen_modelLayout"
+	            android:layout_width="0px"
+	            android:layout_weight="0.75"
+	            android:layout_height="fill_parent"> 
+	                
+                <com.example.citystylishapp.EditPhotoView
+    				android:layout_height="fill_parent"
+					android:layout_width="fill_parent" 
+					android:layout_gravity="center"
+					android:id="@+id/editphotoview">
+				</com.example.citystylishapp.EditPhotoView>  
+	        </FrameLayout>    
+	        <!-- 
+	        <RelativeLayout
+	            android:id="@+id/fl_mainscreen_modelLayout"
+	            android:layout_width="0px"
+	            android:layout_height="fill_parent"
+	            android:layout_weight="0.7"
+	            android:orientation="horizontal"
+	            android:gravity="center" >          
+	             
+	            <FrameLayout 
+	                android:layout_height="fill_parent"
+					android:layout_width="fill_parent" 
+					android:layout_gravity="center"
+					android:gravity="center"
+					android:id="@+id/editphotoviewgroup">
+	                
+	                <com.example.citystylishapp.EditPhotoView
+	    				android:layout_height="fill_parent"
+						android:layout_width="fill_parent" 
+						android:layout_gravity="center"
+						android:id="@+id/editphotoview">
+					</com.example.citystylishapp.EditPhotoView>    
+        			 
+	                	                
+	            </FrameLayout>  
+	                  
+			
+			</RelativeLayout>
+			-->
+			
+	        <!-- Buttons layout -->
+	        <LinearLayout
+			    android:id="@+id/fl_mainscreen_buttonsLayout"
+			    android:layout_width="0px"
+			    android:layout_weight="0.25"
+			    android:layout_height="fill_parent"
+			    android:weightSum="1.0"
+			    android:orientation="vertical"
+			    android:gravity="center" >
+	            
+	            <!-- Buttons empty layout -->
+	            <LinearLayout
+	                android:id="@+id/fl_mainscreen_buttonsempty_Layout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="0px"
+	                android:layout_weight="0.27" >
+			
+				</LinearLayout>
+				
+	            <!-- Buttons real layout -->
+	            <LinearLayout
+	                android:id="@+id/fl_mainscreen_buttonsareaLayout"
+	                android:layout_width="fill_parent"
+	                android:layout_height="0px"
+	                android:layout_weight="0.73"
+	                android:gravity="center_vertical"
+	                android:orientation="vertical" >		
+	                
+	                <!-- Go Back Button -->
+	                <com.agilepoet.introduceyourself.util.ImageViewButton 
+	                    android:id="@+id/btn_fl_goback"
+				        android:layout_width="110dp"
+				        android:layout_height="56dp"
+				        android:layout_gravity="center"
+				        android:src="@drawable/btn_final_goback_img"/>
+	                
+	                <!-- Add Jacket/Layer Button -->
+	                <com.agilepoet.introduceyourself.util.ImageViewButton 
+	                    android:id="@+id/btn_fl_add_jacket"
+				        android:layout_width="110dp"
+				        android:layout_height="56dp"
+				        android:layout_gravity="center"
+				        android:src="@drawable/btn_final_add_jacket_img"/>
+	                
+	                <!-- Save/Redate Button -->
+	                <com.agilepoet.introduceyourself.util.ImageViewButton 
+	                    android:id="@+id/btn_fl_save_redate"
+				        android:layout_width="110dp"
+				        android:layout_height="56dp"
+				        android:layout_gravity="center"
+				        android:src="@drawable/btn_final_save_redate_img"/>
+	                
+	                <!-- Delete Button -->
+	                <com.agilepoet.introduceyourself.util.ImageViewButton 
+	                    android:id="@+id/btn_fl_delete"
+				        android:layout_width="110dp"
+				        android:layout_height="41dp"
+				        android:layout_gravity="center"
+				        android:src="@drawable/btn_final_delete_img"/>	                
+	                
+				</LinearLayout>	        
+			
+			</LinearLayout>
+			
+		</LinearLayout>
+			
+	</LinearLayout>   
+	
+	
+	
+</FrameLayout>

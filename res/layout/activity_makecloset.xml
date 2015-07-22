@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mc_root_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+	<FrameLayout
+	    android:id="@+id/mc_edit_layout"
+		android:gravity="center"
+		android:layout_height="0px"
+		android:layout_weight="0.85"
+		android:layout_width="match_parent">
+		
+	    <ImageView
+	        android:id="@+id/mc_drawing_iv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:background="@drawable/trans_back">
+		</ImageView>   
+	    
+	    <com.example.citystylishapp.DrawingView 
+	        android:id="@+id/mc_drawing_pad"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent">
+	    </com.example.citystylishapp.DrawingView>
+	    
+	    
+	    
+	    
+	</FrameLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/mc_toolbar_layout"
+		android:gravity="center_vertical"
+		android:layout_height="0px"	
+		android:layout_weight="0.15"	
+		android:layout_width="fill_parent"	
+		android:orientation="horizontal"
+		android:background="#F000">
+	    
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+			android:id="@+id/btn_mc_reset"
+			android:layout_height="30dp"
+			android:layout_width="50dp"
+			android:background="@drawable/btn_mc_reset_img"
+			android:layout_centerInParent="true" />
+	    
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+			android:id="@+id/btn_mc_done"
+			android:layout_height="30dp"
+			android:layout_width="50dp"
+			android:background="@drawable/btn_mc_done_img"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentRight="true"
+			android:layout_alignBottom="@+id/btn_mc_reset"/>
+
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+	        android:id="@+id/btn_mc_back"
+	        android:layout_width="50dp"
+	        android:layout_height="30dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignTop="@+id/btn_mc_reset"
+	        android:layout_marginLeft="16dp"
+	        android:background="@drawable/btn_mc_back_img" />
+	    
+	</RelativeLayout>
+    
+</LinearLayout>

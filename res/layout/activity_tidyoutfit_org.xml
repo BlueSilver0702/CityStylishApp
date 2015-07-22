@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="#ffffffff"	
+	android:baselineAligned="false"
+	android:gravity="center_vertical"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"	
+	android:id="@+id/tidyoutfit_rootLayout"
+	android:orientation="vertical" >
+	
+	<LinearLayout
+	    android:id="@+id/tidyoutfit_listlayout"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0px"
+	    android:layout_weight="0.8"
+	    android:background="#FFFFFFFF"
+	    android:orientation="vertical" >
+
+	    <com.devsmart.android.ui.HorizontalListView
+	        android:id="@+id/tidyoutfit_listview"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="#fff" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/tidyoutfit_barlayout"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0px"
+	    android:layout_weight="0.2"
+	    android:background="#FFFFFFFF">
+	     
+	    <RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal">
+
+		    <Button
+		        android:id="@+id/btn_tidyoutfit_undo"
+		        android:layout_width="60dp"
+		        android:layout_height="20dp"
+		        android:layout_alignBaseline="@+id/btn_tidyoutfit_delete"
+		        android:layout_alignBottom="@+id/btn_tidyoutfit_delete"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="21dp"
+		        android:background="@drawable/btn_tidyoutfit_undo" />
+
+		    <Button
+		        android:id="@+id/btn_tidyoutfit_delete"
+		        android:layout_width="60dp"
+		        android:layout_height="50dp"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:background="@drawable/btn_tidyoutfit_delete" />
+
+		    <Button
+		        android:id="@+id/btn_tidyoutfit_finished"
+		        android:layout_width="60dp"
+		        android:layout_height="20dp"
+		        android:layout_alignBaseline="@+id/btn_tidyoutfit_delete"
+		        android:layout_alignBottom="@+id/btn_tidyoutfit_delete"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="26dp"
+		        android:background="@drawable/btn_tidyoutfit_finished" />
+			    
+	    </RelativeLayout>    
+    </LinearLayout> 
+</LinearLayout>

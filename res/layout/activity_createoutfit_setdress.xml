@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical" >
+	
+	<LinearLayout
+	    android:id="@+id/createoutfit_setdress_rootLayout"
+	    android:layout_width="fill_parent"	    
+		android:background="#ffffffff"	
+		android:baselineAligned="false"
+		android:gravity="center_vertical"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+
+	   <HorizontalScrollView 
+			android:id="@+id/creatoutfit_setdress_listview"
+			android:layout_width="match_parent"
+			android:layout_height="0px"
+		    android:layout_weight="0.8"
+			android:background="#fff"/>
+	
+		<LinearLayout
+		    android:id="@+id/creatoutfit_setdress_barlayout"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.2">
+		     
+		    <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:background="#FFFFFFFF" >
+				    
+		        <com.agilepoet.introduceyourself.util.ImageViewButton
+					android:id="@+id/btn_createoutfit_setdress_pick"
+					android:layout_centerHorizontal="true" 
+					android:layout_height="50dp"	
+					android:layout_width="60dp" 
+					android:background="@drawable/btn_createoutfit_pick"/>
+				
+	
+			    <com.agilepoet.introduceyourself.util.ImageViewButton
+			        android:id="@+id/btn_createoutfit_setdress_back"
+			        android:layout_width="60dp"
+			        android:layout_height="20dp"
+			        android:layout_alignBaseline="@+id/btn_createoutfit_setdress_pick"
+			        android:layout_alignBottom="@+id/btn_createoutfit_setdress_pick"
+			        android:layout_alignParentLeft="true"
+			        android:layout_marginLeft="20dp"
+			        android:background="@drawable/btn_createoutfit_back" />
+	
+			    <com.agilepoet.introduceyourself.util.ImageViewButton
+			        android:id="@+id/btn_createoutfit_setdress_done"
+			        android:layout_width="60dp"
+			        android:layout_height="20dp"
+			        android:layout_alignBaseline="@+id/btn_createoutfit_setdress_pick"
+			        android:layout_alignBottom="@+id/btn_createoutfit_setdress_pick"
+			        android:layout_alignParentRight="true"
+			        android:layout_marginRight="27dp"
+			        android:background="@drawable/btn_createoutfit_done" />
+				    
+		    </RelativeLayout>    
+	    </LinearLayout> 
+    </LinearLayout>
+</LinearLayout>

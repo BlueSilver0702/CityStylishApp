@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@drawable/background_wardrobe_addtocloset_vs"
+	android:gravity="center"
+	android:baselineAligned="false"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:padding="20dp"
+	android:orientation="horizontal" >
+	
+	<LinearLayout
+		android:gravity="center"
+		android:layout_height="match_parent"		
+		android:layout_width="0px"
+		android:layout_weight="0.4" >
+		
+	    
+	</LinearLayout>
+
+	<RelativeLayout
+	    android:layout_width="0px"
+	    android:layout_height="match_parent"
+	    android:layout_weight="0.6"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical" >
+
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+	        android:id="@+id/btn_wardrobe_addtocloset_vs_tops"
+	        android:layout_width="200dp"
+	        android:layout_height="30dp"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="0dp"
+	        android:background="@drawable/btn_wardrobe_tidycloset_tops_img" />
+
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+	        android:id="@+id/btn_wardrobe_addtocloset_vs_bottoms"
+	        android:layout_width="200dp"
+	        android:layout_height="30dp"
+	        android:layout_below="@+id/btn_wardrobe_addtocloset_vs_tops"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_wardrobe_tidycloset_bottoms_img" />
+
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+	        android:id="@+id/btn_wardrobe_addtocloset_vs_sets"
+	        android:layout_width="200dp"
+	        android:layout_height="30dp"
+	        android:layout_below="@+id/btn_wardrobe_addtocloset_vs_bottoms"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_wardrobe_tidycloset_sets_img" />
+
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+	        android:id="@+id/btn_wardrobe_addtocloset_vs_accessories"
+	        android:layout_width="200dp"
+	        android:layout_height="30dp"
+	        android:layout_below="@+id/btn_wardrobe_addtocloset_vs_sets"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_wardrobe_tidycloset_accessories_img" />
+
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+	        android:id="@+id/btn_wardrobe_addtocloset_vs_footwear"
+	        android:layout_width="200dp"
+	        android:layout_height="30dp"
+	        android:layout_below="@+id/btn_wardrobe_addtocloset_vs_accessories"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_wardrobe_tidycloset_footwear_img" />
+	    
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+	        android:id="@+id/btn_wardrobe_addtocloset_vs_jackets"
+	        android:layout_width="200dp"
+	        android:layout_height="30dp"
+	        android:layout_below="@+id/btn_wardrobe_addtocloset_vs_footwear"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_wardrobe_tidycloset_jackets_img" />
+	    
+	    <com.agilepoet.introduceyourself.util.ImageViewButton
+	        android:id="@+id/btn_wardrobe_addtocloset_vs_done"
+	        android:layout_width="200dp"
+	        android:layout_height="30dp"
+	        android:layout_below="@+id/btn_wardrobe_addtocloset_vs_jackets"
+	        android:layout_marginLeft="30dp"
+	        android:layout_marginTop="10dp"
+	        android:background="@drawable/btn_wardrobe_tidycloset_done_img" />
+	</RelativeLayout>
+	
+</LinearLayout>

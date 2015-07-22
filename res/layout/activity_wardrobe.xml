@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@drawable/background_wardrobe"
+	android:gravity="center"
+	android:baselineAligned="false"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:padding="20dp"
+	android:orientation="horizontal" >
+	
+	<LinearLayout
+		android:gravity="center"
+		android:layout_height="match_parent"		
+		android:layout_width="0px"
+		android:layout_weight="0.4" >		
+	    
+	</LinearLayout>
+	
+	<RelativeLayout
+		android:gravity="center_vertical"
+		android:layout_height="match_parent"		
+		android:layout_width="0px"
+		android:layout_weight="0.6"
+		android:orientation="vertical" >
+		
+	    	<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_wardrobe_view_outfits"
+				android:layout_height="30dp"
+				android:layout_width="200dp"
+				android:background="@drawable/btn_wardrobe_view_outfits_img"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="20dp" />
+				
+	    	
+		
+			<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_wardrobe_tidy_outfits"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_wardrobe_tidy_outfits_img"
+				android:layout_below="@+id/btn_wardrobe_view_outfits"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="20dp" />
+		
+			
+			<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_wardrobe_closet"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_wardrobe_closet_img"
+				android:layout_below="@+id/btn_wardrobe_tidy_outfits"
+				android:layout_marginTop="15dp" 
+				android:layout_marginLeft="20dp" />
+			
+			
+			<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_wardrobe_create_outfit"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_wardrobe_create_outfit_img"
+				android:layout_below="@+id/btn_wardrobe_closet"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="20dp" />
+			
+			
+			<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_wardrobe_escape"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_wardrobe_escape_img"
+				android:layout_below="@+id/btn_wardrobe_create_outfit"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="20dp"  />
+			
+	    
+	</RelativeLayout>	
+	
+</LinearLayout>

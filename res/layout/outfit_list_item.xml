@@ -1,0 +1,53 @@
+<!--?xml version="1.0" encoding="utf-8"?-->  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="vertical" 
+    android:layout_width="wrap_content" 
+    android:layout_height="fill_parent" 
+    android:background="#fff">   
+
+    
+    <LinearLayout 
+	    android:orientation="vertical" 
+	    android:layout_width="wrap_content" 
+	    android:layout_height="fill_parent" 
+	    android:background="#fff">
+	    
+         <LinearLayout 
+		    android:orientation="horizontal" 
+		    android:layout_height="80dp" 
+		    android:layout_width="fill_parent" 
+		    android:background="#fff">		    
+        
+	        <LinearLayout 
+			    android:layout_width="0px" 
+			    android:layout_weight="0.5"
+			    android:layout_height="fill_parent" 
+			    android:background="#fff">
+			    
+	        </LinearLayout>
+        
+	        <LinearLayout 
+			    android:orientation="vertical" 
+			    android:layout_width="0px" 
+			    android:layout_weight="0.5" 
+			    android:layout_height="fill_parent" 
+			    android:gravity="bottom"
+			    android:background="#fff">            
+	            
+	            <TextView 
+			        android:id="@+id/outfit_listitem_date" 
+			        android:textColor="#66666666"
+			        android:layout_width="fill_parent"				     
+				    android:layout_height="wrap_content" >  
+		    	</TextView>
+		    	
+	        </LinearLayout>    
+	    </LinearLayout>
+	    <ImageView
+	        android:id="@+id/outfit_listitem_image"
+	        android:layout_width="200dp"
+	        android:layout_height="fill_parent" />
+    
+    </LinearLayout> 
+    
+</LinearLayout>  

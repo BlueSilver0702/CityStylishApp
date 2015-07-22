@@ -1,0 +1,104 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@drawable/background_profile"	
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"	
+	android:id="@+id/rootLayout" >
+			
+	<LinearLayout
+	    android:id="@+id/slidemenu_Layout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="110dp"
+	    android:layout_gravity="center"
+	    android:gravity="left"
+	    android:orientation="vertical" >
+			
+	        <com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_profile_take_photo"
+				android:layout_height="40dp"
+				android:layout_width="190dp"
+				android:background="@drawable/btn_profile_slide_takephoto"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="20dp" />				
+	    	
+	    	
+	        <ImageView
+            	android:id="@+id/img4"
+            	android:layout_width="190dp"
+            	android:layout_height="30dp"
+            	android:src="@drawable/btn_profile_slide_gap" 
+            	android:layout_marginLeft="20dip" 
+            	android:layout_marginTop="-9dip"/>
+	    	
+	        <com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_profile_library_photo"
+				android:layout_height="40dp"
+				android:layout_width="190dp" 
+				android:background="@drawable/btn_profile_slide_library"
+				android:layout_below="@+id/btn_profile_add_personal_photo"
+				android:layout_marginTop="-9dp"
+				android:layout_marginLeft="20dp" />
+			
+			
+	</LinearLayout>   
+	
+	<RelativeLayout
+		android:gravity="center_vertical"
+		android:layout_height="match_parent"		
+		android:layout_width="250dp"
+		android:orientation="vertical"
+		android:layout_gravity="right|center" >
+		
+	    	<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_profile_add_personal_photo"
+				android:layout_height="30dp"
+				android:layout_width="200dp"
+				android:background="@drawable/btn_profile_add_personal_photo_img"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="30dp" />
+				
+	    	
+		
+			<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_profile_change_personal_photo"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_profile_change_personal_photo_img"
+				android:layout_below="@+id/btn_profile_add_personal_photo"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="30dp" />
+			
+			
+			<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_profile_continue_with_cur_photo"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_profile_continue_with_cur_photo_img"
+				android:layout_below="@+id/btn_profile_change_personal_photo"
+				android:layout_marginTop="15dp" 
+				android:layout_marginLeft="30dp" />
+			
+			
+			<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_profile_continue_without_photo"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_profile_continue_without_photo_img"
+				android:layout_below="@+id/btn_profile_continue_with_cur_photo"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="30dp" />
+			
+			
+			<com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_profile_escape"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_wardrobe_escape_img"
+				android:layout_below="@+id/btn_profile_continue_without_photo"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="30dp"  />
+			
+	    
+	</RelativeLayout>
+	
+</FrameLayout>

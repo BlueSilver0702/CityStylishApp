@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="#ffffffff"	
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"	
+	android:id="@+id/rootLayout" >
+			
+	<RelativeLayout
+	    android:id="@+id/outfit_slidemenu_Layout"
+	    android:layout_width="wrap_content"
+	    android:layout_height="150dp"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+			
+	        <com.agilepoet.introduceyourself.util.ImageViewButton
+				android:id="@+id/btn_outfit_girls_all"
+				android:layout_height="55dp"
+				android:layout_width="190dp"
+				android:background="@drawable/btn_outfit_girls_all_img"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="0dp" />	
+
+	        <com.agilepoet.introduceyourself.util.ImageViewButton	            
+	            
+	            android:id="@+id/btn_outfit_girls_am"
+	            android:layout_width="190dp"
+	            android:layout_height="55dp"
+	            android:layout_alignBaseline="@+id/btn_outfit_girls_all"
+	            android:layout_alignBottom="@+id/btn_outfit_girls_all"
+	            android:layout_toRightOf="@+id/btn_outfit_girls_all"
+	            android:background="@drawable/btn_outfit_girls_am_img" />
+
+	        <com.agilepoet.introduceyourself.util.ImageViewButton
+	            android:id="@+id/btn_outfit_girls_pm"
+	            android:layout_width="190dp"
+	            android:layout_height="55dp"
+	            android:layout_below="@+id/btn_outfit_girls_all"
+	            android:layout_toLeftOf="@+id/btn_outfit_girls_am"
+	            android:background="@drawable/btn_outfit_girls_pm_img" />
+
+	        <com.agilepoet.introduceyourself.util.ImageViewButton
+	            android:id="@+id/btn_outfit_guys_all"
+	            android:layout_width="190dp"
+	            android:layout_height="55dp"
+	            android:layout_alignBaseline="@+id/btn_outfit_girls_pm"
+	            android:layout_alignBottom="@+id/btn_outfit_girls_pm"
+	            android:layout_alignLeft="@+id/btn_outfit_girls_am"
+	            android:background="@drawable/btn_outfit_guys_all_img" />
+	            
+	</RelativeLayout>
+	
+	<LinearLayout 
+	    android:id="@+id/second_rootview"
+	    android:orientation="vertical"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="#FFFFFFFF">
+	   
+	    <HorizontalScrollView
+		    android:id="@+id/listview"
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.9"
+		    android:background="#fff" />
+	    <!-- 
+		<com.devsmart.android.ui.HorizontalListView
+		    android:id="@+id/listview"
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.9"
+		    android:background="#fff" />
+		-->
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+			android:layout_weight="0.1"		
+		    android:layout_gravity="bottom"
+		    android:orientation="horizontal" >
+		        
+		    	<com.agilepoet.introduceyourself.util.ImageViewButton
+					android:id="@+id/btn_outfit_view"
+					android:layout_centerHorizontal="true" 
+					android:layout_height="40dp"
+					android:layout_width="60dp" 
+					android:background="@drawable/btn_outfit_view_img"/>			
+	
+		    	<com.agilepoet.introduceyourself.util.ImageViewButton
+		    	    android:id="@+id/btn_outfit_escape"
+		    	    android:layout_width="60dp"
+		    	    android:layout_height="20dp"
+		    	    android:layout_alignBaseline="@+id/btn_outfit_view"
+		    	    android:layout_alignBottom="@+id/btn_outfit_view"
+		    	    android:layout_alignParentRight="true"
+		    	    android:layout_marginRight="10dp"
+		    	    android:background="@drawable/btn_outfit_escape_img" />
+		    	
+		</RelativeLayout>
+	</LinearLayout>
+</FrameLayout>

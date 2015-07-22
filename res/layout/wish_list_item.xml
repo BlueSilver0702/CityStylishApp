@@ -1,0 +1,197 @@
+<!--?xml version="1.0" encoding="utf-8"?-->  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+    android:background="#fff">   
+
+    <LinearLayout  
+	    android:orientation="horizontal" 
+	    android:layout_width="match_parent" 
+	    android:layout_height="80dp"
+	    android:layout_marginLeft="5dp" 
+	    android:layout_marginRight="5dp"	    
+	    android:background="#fff">
+	    
+        <LinearLayout  
+		    android:orientation="vertical" 
+		    android:layout_width="0px"
+		    android:layout_weight="0.14" 
+		    android:layout_height="match_parent"
+		    android:gravity="center"	
+		    android:background="#fff">
+		    
+	        <ImageView
+		        android:id="@+id/wish_listitem_image"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:src="@drawable/bottoms_02"/>
+		        <!--  android:src="@drawable/bottoms_02" --> 
+	    
+	    </LinearLayout>
+        
+        <LinearLayout  
+		    android:orientation="vertical" 
+		    android:layout_width="0px"
+		    android:layout_weight="0.21" 
+		    android:layout_height="match_parent"
+		    android:gravity="center"
+		    android:background="#ffff">       
+				    
+            <TextView
+                android:id="@+id/wl_item_txt_line1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@android:color/black"
+                android:text="G-STAR"/>
+                          
+            <TextView
+                android:id="@+id/wl_item_txt_line2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="I am a student"/>
+            
+            <TextView
+                android:id="@+id/wl_item_txt_line3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:text="You are my love"/>    
+                        
+	    </LinearLayout>
+	    
+        <LinearLayout 
+			android:id="@+id/wish_item_sizelabel_layout"
+			android:layout_width="0px"
+			android:layout_weight="0.07"
+			android:layout_height="match_parent"	
+			android:gravity="center"				    
+			android:orientation="vertical">			    
+                    
+			<TextView
+                android:id="@+id/wl_item_txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#0000FF"
+                android:text="27"/>	
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+			android:id="@+id/wl_item_countuplayout"
+			android:layout_width="0px"
+			android:layout_weight="0.07"
+			android:layout_height="match_parent"	
+			android:gravity="center"				    
+			android:orientation="vertical">			    
+                    
+			<Button
+                android:id="@+id/btn_wl_item_cu"
+                android:layout_width="20dp"
+                android:layout_height="30dp"	                        
+                android:background="@drawable/btn_wishlist_item_countup_img"
+                android:layout_gravity="center"/>
+            	
+        </LinearLayout>
+        
+        <LinearLayout 
+			android:id="@+id/wl_item_countlayout"
+			android:layout_width="0px"
+			android:layout_weight="0.07"
+			android:layout_height="match_parent"	
+			android:gravity="center"				    
+			android:orientation="vertical">			    
+                  
+            <TextView
+                android:id="@+id/wl_item_txt_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#0000FF"
+                android:text="27"/>
+				
+        </LinearLayout>
+        
+        <LinearLayout 
+			android:id="@+id/wl_item_countdownlayout"
+			android:layout_width="0px"
+			android:layout_weight="0.07"
+			android:layout_height="match_parent"	
+			android:gravity="center"				    
+			android:orientation="vertical">			    
+                    
+			<Button
+                android:id="@+id/btn_wl_item_cd"
+                android:layout_width="20dp"
+                android:layout_height="30dp"	                        
+                android:background="@drawable/btn_wishlist_item_countdown_img"
+                android:layout_gravity="center"/>
+            	
+        </LinearLayout>
+        
+        <LinearLayout 
+			android:id="@+id/wl_item_removelayout"
+			android:layout_width="0px"
+			android:layout_weight="0.16"
+			android:layout_height="match_parent"	
+			android:gravity="center"				    
+			android:orientation="vertical">
+			
+            <Button
+                android:id="@+id/btn_wl_item_remove"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"	
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_wishlist_item_remove_img"
+                android:layout_gravity="center"/>
+        
+        </LinearLayout>    	
+        
+        <LinearLayout 
+			android:id="@+id/wl_item_unitPricelayout"
+			android:layout_width="0px"
+			android:layout_weight="0.18"
+			android:layout_height="match_parent"	
+			android:gravity="center"				    
+			android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/wl_item_txt_unitPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#FF0000"
+                android:text="$1898.95"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+			android:id="@+id/wl_item_totalPricelayout"
+			android:layout_width="0px"
+			android:layout_weight="0.18"
+			android:layout_height="match_parent"	
+			android:gravity="center"				    
+			android:orientation="vertical">
+            
+            <TextView
+                android:id="@+id/wl_item_txt_totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:textColor="#FF0000"
+                android:text="$189.95"/>
+            
+        </LinearLayout>     
+            
+    </LinearLayout>   
+    
+</LinearLayout>  

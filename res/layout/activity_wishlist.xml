@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#ffff">
+    
+    <LinearLayout 
+	    android:id="@+id/wish_list_rootLayout"    
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:background="#ffff">
+    
+        <LinearLayout 
+		    android:id="@+id/wish_list_topLayout"    
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.25"
+		    android:orientation="horizontal" 
+		    android:background="#ffff">  
+		    
+            <LinearLayout 
+			    android:id="@+id/wish_list_top_logoLayout"    
+			    android:layout_height="match_parent"
+			    android:layout_width="0px"
+			    android:layout_weight="0.28"
+			    android:orientation="vertical" 
+			    android:background="@drawable/img_vs_applogo_img">        
+	        
+			</LinearLayout>
+			
+            <LinearLayout 
+			    android:id="@+id/wish_list_top_guideLayout"    
+			    android:layout_height="match_parent"
+			    android:layout_width="0px"
+			    android:layout_weight="0.5"
+			    android:orientation="vertical" 
+			    android:background="#ff000000"> 
+			    
+                <LinearLayout 
+				    android:id="@+id/wl_top_guide_topLinear"    
+				    android:layout_width="match_parent"
+				    android:layout_height="0px"
+				    android:layout_weight="0.5"
+				    android:orientation="vertical"> 
+				    
+                    <TextView
+                        android:id="@+id/wl_txt_total_excluding_gst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:textSize="27sp"
+                        android:text="Your Wish List"
+                        android:textColor="@android:color/white"/>
+			    
+				</LinearLayout>
+				
+                <LinearLayout 
+				    android:id="@+id/wl_top_guide_belowLinear"    
+				    android:layout_width="match_parent"
+				    android:layout_height="0px"
+				    android:layout_weight="0.5"
+				    android:orientation="horizontal"> 
+				    
+                    <LinearLayout 
+					    android:id="@+id/wl_tg_right_top"    
+					    android:layout_height="match_parent"
+					    android:layout_width="0px"
+					    android:layout_weight="0.7"
+					    android:orientation="vertical"> 
+					    
+                        <TextView
+	                        android:id="@+id/wl_txt_1"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center"
+	                        android:textStyle="bold"
+	                        android:textSize="12sp"
+	                        android:text="Check out to Guarantee"
+	                        android:textColor="@android:color/white"/>
+                        
+                        <TextView
+	                        android:id="@+id/wl_txt_2"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center"
+	                        android:textStyle="bold"
+	                        android:textSize="12sp"
+	                        android:text="Availability of item's"
+	                        android:textColor="@android:color/white"/>
+			    
+					</LinearLayout>
+					
+                    <LinearLayout 
+					    android:id="@+id/wl_tg_right_bottom"    
+					    android:layout_height="match_parent"
+					    android:layout_width="0px"
+					    android:layout_weight="0.3"					    
+					    android:orientation="vertical"
+					    android:gravity="center"> 				    
+                    
+			    		<com.agilepoet.introduceyourself.util.ImageViewButton
+	                        android:id="@+id/btn_wl_tg_back"
+	                        android:layout_width="65dp"
+	                        android:layout_height="30dp"	                        
+	                        android:background="@drawable/btn_vs_back_img"
+	                        android:layout_gravity="center"/>
+			    		
+					</LinearLayout>                   
+			    
+				</LinearLayout>
+	        
+			</LinearLayout>
+			
+            <LinearLayout 
+			    android:id="@+id/wish_list_top_photoLayout"    
+			    android:layout_height="match_parent"
+			    android:layout_width="0px"
+			    android:layout_weight="0.27"
+			    android:orientation="vertical"
+			    android:background="@drawable/img_vs_photo_img">        
+	        
+			</LinearLayout>       
+        
+		</LinearLayout>
+		
+        <LinearLayout 
+		    android:id="@+id/wish_list_center_black_Layout"    
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.01"
+		    android:orientation="horizontal" 
+		    android:background="#ff000000">
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+		    android:id="@+id/wish_list_center_labels_Layout"    
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.07"
+		    android:orientation="horizontal" 
+		    android:background="#ffff">
+            
+        </LinearLayout>
+		
+        <LinearLayout 
+		    android:id="@+id/wish_list_centerLayout"    
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.48"
+		    android:orientation="horizontal" 
+		    android:background="#ffff">  
+		    
+            <ListView 
+			    android:id="@+id/wl_item_listview"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent" /> 	
+			
+		</LinearLayout>
+		
+        <LinearLayout 
+		    android:id="@+id/wish_list_bottom_black_Layout"    
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.01"
+		    android:orientation="horizontal" 
+		    android:background="#ff000000">
+            
+        </LinearLayout>
+            
+        <LinearLayout 
+		    android:id="@+id/wish_list_bottomLayout"    
+		    android:layout_width="match_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.17"
+		    android:orientation="horizontal" 
+		    android:background="#ffff">
+
+            <LinearLayout 
+			    android:id="@+id/wish_list_bottom_checkoutLayout"    
+			    android:layout_height="match_parent"
+			    android:layout_width="0px"
+			    android:layout_weight="0.2"
+			    android:orientation="vertical" 
+			    android:background="#ffff">  
+			    
+        	    <Button
+                     android:id="@+id/btn_wl_checkout"
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:layout_gravity="center"
+                     android:background="@drawable/btn_wishlist_checkout" />
+	        
+			</LinearLayout>
+			
+        	<LinearLayout 
+			    android:id="@+id/wish_list_bottom_imageLayout"    
+			    android:layout_height="match_parent"
+			    android:layout_width="0px"
+			    android:layout_weight="0.4"
+			    android:orientation="vertical" 
+			    android:background="@drawable/img_wishlist_paypal">       	    
+	        
+			</LinearLayout>
+			
+			<LinearLayout 
+			    android:id="@+id/wish_list_bottom_totalLayout"    
+			    android:layout_height="match_parent"
+			    android:layout_width="0px"
+			    android:layout_weight="0.4"
+			    android:orientation="vertical" 
+			    android:background="#ffff">    
+        	    
+			    <RelativeLayout 
+				    android:id="@+id/wl_bottom_relativeLayout"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent">
+				    
+                    <TextView
+                        android:id="@+id/wl_txt_total_excluding_gst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginTop="3dp"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="Total Excluding Gst $"
+                        android:textColor="@android:color/black"/>
+                    
+                    
+                    <TextView
+                        android:id="@+id/wl_txt_total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"  
+                        android:layout_marginTop="3dp" 
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="242.91"
+                        android:textColor="#EE0000"/>
+
+                    <TextView
+                        android:id="@+id/wl_txt_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/wl_txt_gst_amount"
+                        android:layout_alignBottom="@+id/wl_txt_gst_amount"
+                        android:layout_alignLeft="@+id/wl_txt_total_price"
+                        android:text="300.91"
+                        android:textColor="#EE0000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                    
+                    <TextView
+                        android:id="@+id/wl_txt_total_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/wl_txt_total_excluding_gst"
+                        android:layout_below="@+id/wl_txt_gst_amount"
+                        android:text="Total Amount Due $"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/wl_txt_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/wl_txt_amount"
+                        android:layout_below="@+id/wl_txt_amount"
+                        android:layout_alignParentBottom="true"
+                        android:text="500.91"
+                        android:textColor="#EE0000"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/wl_txt_gst_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@+id/wl_txt_total_amount"
+                        android:layout_below="@+id/wl_txt_total_excluding_gst"
+                        android:text="GST Amount $"
+                        android:textColor="@android:color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+				
+                </RelativeLayout>
+	        
+			</LinearLayout>      	
+        
+		</LinearLayout>        
+        
+	</LinearLayout>
+	
+</LinearLayout>

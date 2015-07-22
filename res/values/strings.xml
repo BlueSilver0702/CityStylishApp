@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CITY STYLIST APP</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello">Hello World, MyTatActivity!</string>    
+    <string name="moretext">Text</string>
+    <string name="done">Done</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="request">Request!</string>
+    <string name="upload">Upload Photo</string>
+    <string name="post">Wall Post!</string>
+    <string name="delete">Delete Post</string>
+    <string name="vs_txt1">Scroll across \u0026</string>
+    <string name="vs_txt2">"Tap" Size to</string>
+    <string name="vs_txt3">Add to Closet</string>
+    <string name="vs_txt4">\u0026 to Wish List</string>
+
+</resources>

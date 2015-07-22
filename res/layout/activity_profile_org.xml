@@ -1,0 +1,135 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:background="@drawable/background_wardrobe"
+	android:gravity="center"
+	android:baselineAligned="false"
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:padding="20dp"
+	android:orientation="horizontal"
+	android:id="@+id/rootLayout" >
+	
+	<LinearLayout
+		android:gravity="left"
+		android:layout_height="match_parent"		
+		android:layout_width="0px"
+		android:layout_weight="0.4"
+		android:orientation="vertical" >
+		
+	    <LinearLayout
+			android:gravity="left"
+			android:layout_height="0px"		
+			android:layout_width="match_parent"
+			android:layout_weight="0.3"
+			android:orientation="vertical" >
+		</LinearLayout>
+			
+	    <LinearLayout
+	        android:id="@+id/slidemenu_Layout"
+	        android:layout_width="171dp"
+	        android:layout_height="0px"
+	        android:layout_marginLeft="-172dp"
+	        android:layout_weight="0.40"
+	        android:gravity="left"
+	        android:orientation="vertical"
+	        android:clipChildren="false" android:clipToPadding="false" >
+			
+	        <Button
+				android:id="@+id/btn_profile_take_photo"
+				android:layout_height="30dp"
+				android:layout_width="wrap_content"
+				android:background="@drawable/btn_profile_slide_takephoto"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="20dp" >
+				
+	    	</Button>
+	    	
+	        <ImageView
+            	android:id="@+id/img4"
+            	android:layout_width="wrap_content"
+            	android:layout_height="30dp"
+            	android:src="@drawable/btn_profile_slide_gap" 
+            	android:layout_marginLeft="20dip" 
+            	android:layout_marginTop="-9dip"/>
+	    	
+	        <Button
+				android:id="@+id/btn_profile_library_photo"
+				android:layout_height="30dp"
+				android:layout_width="wrap_content" 
+				android:background="@drawable/btn_profile_slide_library"
+				android:layout_below="@+id/btn_profile_add_personal_photo"
+				android:layout_marginTop="-9dp"
+				android:layout_marginLeft="20dp" >
+			</Button>
+		</LinearLayout>
+		
+	    <LinearLayout
+			android:gravity="left"
+			android:layout_height="0px"		
+			android:layout_width="match_parent"
+			android:layout_weight="0.3"
+			android:orientation="vertical" >        
+	        
+		</LinearLayout>    
+	</LinearLayout>
+	
+	<RelativeLayout
+		android:gravity="center_vertical"
+		android:layout_height="match_parent"		
+		android:layout_width="0px"
+		android:layout_weight="0.6"
+		android:orientation="vertical" >
+		
+	    	<Button
+				android:id="@+id/btn_profile_add_personal_photo"
+				android:layout_height="30dp"
+				android:layout_width="200dp"
+				android:background="@drawable/btn_profile_add_personal_photo"
+				android:layout_marginTop="10dp"
+				android:layout_marginLeft="30dp" >
+				
+	    	</Button>
+		
+			<Button
+				android:id="@+id/btn_profile_change_personal_photo"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_profile_change_personal_photo"
+				android:layout_below="@+id/btn_profile_add_personal_photo"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="30dp" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btn_profile_continue_with_cur_photo"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_profile_continue_with_cur_photo"
+				android:layout_below="@+id/btn_profile_change_personal_photo"
+				android:layout_marginTop="15dp" 
+				android:layout_marginLeft="30dp" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btn_profile_continue_without_photo"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_profile_continue_without_photo"
+				android:layout_below="@+id/btn_profile_continue_with_cur_photo"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="30dp" >
+			</Button>
+			
+			<Button
+				android:id="@+id/btn_profile_escape"
+				android:layout_height="30dp"
+				android:layout_width="200dp" 
+				android:background="@drawable/btn_profile_escape"
+				android:layout_below="@+id/btn_profile_continue_without_photo"
+				android:layout_marginTop="15dp"
+				android:layout_marginLeft="30dp"  >
+			</Button>
+	    
+	</RelativeLayout>
+	
+</LinearLayout>

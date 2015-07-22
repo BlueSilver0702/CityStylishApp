@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent"
+	android:orientation="vertical" >
+	
+	<LinearLayout
+	    android:id="@+id/createoutfit_add_jacket_rootLayout"
+	    android:layout_width="fill_parent"	    
+		android:background="#ffffffff"	
+		android:baselineAligned="false"
+		android:gravity="center_vertical"
+	    android:layout_height="fill_parent"
+	    android:orientation="vertical" >
+
+	    <HorizontalScrollView 
+			android:id="@+id/creatoutfit_jacket_listview"
+			android:layout_width="match_parent"
+			android:layout_height="0px"
+		    android:layout_weight="0.8"
+			android:background="#fff"/>
+	
+	
+		<LinearLayout
+		    android:id="@+id/creatoutfit_jacket_barlayout"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="0px"
+		    android:layout_weight="0.2"
+		    android:background="#FFFFFFFF">
+		     
+		    <RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal">
+				
+		        <!-- 
+			    <Button
+			        android:id="@+id/btn_createoutfit_footwear_skip"
+			        android:layout_width="60dp"
+			        android:layout_height="20dp"
+			        android:layout_alignBaseline="@+id/btn_createoutfit_footwear_pick"
+			        android:layout_alignBottom="@+id/btn_createoutfit_footwear_pick"
+			        android:layout_alignParentLeft="true"
+			        android:layout_marginLeft="21dp"
+			        android:background="@drawable/btn_createoutfit_skip" />
+				-->
+				
+				<com.agilepoet.introduceyourself.util.ImageViewButton 
+	                    android:id="@+id/btn_createoutfit_jacket_pick"
+				        android:layout_width="110dp"
+				        android:layout_height="55dp"
+				        android:layout_alignParentTop="true"
+			        	android:layout_centerHorizontal="true"
+				        android:src="@drawable/btn_addjacket_pic_img"/>
+			    
+				<com.agilepoet.introduceyourself.util.ImageViewButton 
+	                    android:id="@+id/btn_createoutfit_jacket_goback"
+				        android:layout_width="90dp"
+				        android:layout_height="45dp"
+				        android:layout_alignBottom="@+id/btn_createoutfit_jacket_pick"
+			        	android:layout_alignParentRight="true"
+			        	android:layout_marginRight="10dp"
+				        android:src="@drawable/btn_addjacket_goback_img"/>
+							    
+		    </RelativeLayout>    
+	    </LinearLayout> 
+    </LinearLayout>
+</LinearLayout>
